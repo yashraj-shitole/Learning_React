@@ -1,15 +1,23 @@
-import { useState } from 'react'
+import Calculator from "./Calculator";
+import Counter from "./Counter";
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
 
-      <h1>HELLO</h1>
 
-    </>
+<div className="flex flex-col gap-5 justify-evenly items-center p-14 md:flex-row  md:items-start ">
+
+      <Counter/>
+      <Calculator/>
+      
+</div>
+   
+  
   )
 }
+
+
 
 export default App
